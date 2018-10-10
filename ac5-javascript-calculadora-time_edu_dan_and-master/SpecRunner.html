@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v3.2.1</title>
+
+  <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.2.1/jasmine_favicon.png">
+  <link rel="stylesheet" href="lib/jasmine-3.2.1/jasmine.css">
+
+  <script src="lib/jasmine-3.2.1/jasmine.js"></script>
+  <script src="lib/jasmine-3.2.1/jasmine-html.js"></script>
+  <script src="lib/jasmine-3.2.1/boot.js"></script>
+  <script src="lib/jquery.slim.js"></script>
+
+  <!-- Adicione aqui seus scripts para testar -->
+    <script src="js/Calculadora.js" defer>
+     
+    
+    </script>
+  <!-- Adicione acima os scripts -->
+
+  <script src="spec/OperacaoSpec.js"></script>
+
+</head>
+
+<div class="calculadora">
+    <input type="text" id="resultado" />
+
+    <button class="numero" onclick="digitar(9);">9</button>
+    <button class="numero" onclick="digitar(8);">8</button>
+    <button class="numero" onclick="digitar(7);">7</button>
+    <button class="operacao somar" onclick="digitar_opr('+');">+</button>
+    
+    <button class="numero" onclick="digitar(6);">6</button>
+    <button class="numero" onclick="digitar(5);">5</button>
+    <button class="numero" onclick="digitar(4);">4</button>
+    <button class="operacao subtrair" onclick="digitar_opr('-');">-</button>
+    
+    <button class="numero" onclick="digitar(3);">3</button>
+    <button class="numero" onclick="digitar(2);">2</button>
+    <button class="numero" onclick="digitar(1);">1</button>
+    <button class="operacao multiplicar" onclick="digitar_opr('*');">*</button>
+    
+    <button class="numero" onclick="digitar(0);">0</button>
+    <button class="numero" onclick="digitar('.');">.</button>
+    <button class="resultar" onclick="calcular();">=</button>
+    <button class="operacao dividir" onclick="digitar_opr('/');">/</button>
+</div>
+</body>
+</html>
+
