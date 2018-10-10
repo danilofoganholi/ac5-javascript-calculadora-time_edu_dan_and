@@ -13,37 +13,39 @@
   <script src="lib/jquery.slim.js"></script>
 
   <!-- Adicione aqui seus scripts para testar -->
-
+    <script src="js/Calculadora.js" defer>
+     
+    
+    </script>
   <!-- Adicione acima os scripts -->
 
   <script src="spec/OperacaoSpec.js"></script>
 
 </head>
 
-<body>
-    <div class="calculadora" style="display: none;">
-        <input type="text" id="resultado" />
+<div class="calculadora">
+    <input type="text" id="resultado" />
 
-        <button class="numero">9</button>
-        <button class="numero">8</button>
-        <button class="numero">7</button>
-        <button class="operacao somar">+</button>
-        
-        <button class="numero">6</button>
-        <button class="numero">5</button>
-        <button class="numero">4</button>
-        <button class="operacao subtrair">-</button>
-        
-        <button class="numero">3</button>
-        <button class="numero">2</button>
-        <button class="numero">1</button>
-        <button class="operacao multiplicar">*</button>
-        
-        <button class="numero">0</button>
-        <button class="numero">.</button>
-        <button class="resultar">=</button>
-        <button class="operacao dividir">/</button>
-    </div>
-
+    <button class="numero" onclick="digitar(9);">9</button>
+    <button class="numero" onclick="digitar(8);">8</button>
+    <button class="numero" onclick="digitar(7);">7</button>
+    <button class="operacao somar" onclick="digitar_opr('+');">+</button>
+    
+    <button class="numero" onclick="digitar(6);">6</button>
+    <button class="numero" onclick="digitar(5);">5</button>
+    <button class="numero" onclick="digitar(4);">4</button>
+    <button class="operacao subtrair" onclick="digitar_opr('-');">-</button>
+    
+    <button class="numero" onclick="digitar(3);">3</button>
+    <button class="numero" onclick="digitar(2);">2</button>
+    <button class="numero" onclick="digitar(1);">1</button>
+    <button class="operacao multiplicar" onclick="digitar_opr('*');">*</button>
+    
+    <button class="numero" onclick="digitar(0);">0</button>
+    <button class="numero" onclick="digitar('.');">.</button>
+    <button class="resultar" onclick="calcular();">=</button>
+    <button class="operacao dividir" onclick="digitar_opr('/');">/</button>
+</div>
 </body>
 </html>
+
